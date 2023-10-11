@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        
+        body, h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+       
+        body {
+            background: linear-gradient(to bottom right, #4AC7D0, #00A7AF), #8ED5D5; 
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+            background-image: url('C:\Users\tejha\OneDrive\Pictures\background.jpg'); 
+            background-repeat: repeat; 
+            background-attachment: fixed;
+        }
+
+       
+        header {
+            background-color: rgba(0, 0, 0, 0.7); 
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 0 20px rgba(192, 192, 192, 0.7); 
+            filter: brightness(1.2); 
+        }
+
+       
+        #profile-image {
+            max-width: 250px; 
+            border-radius: 50%; 
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            down: 20px;
+            transition: box-shadow 1.3s, filter 0.3s;
+        }
+
+        
+        #profile-image:hover {
+            box-shadow: 0 0 20px rgba(192, 192, 192, 0.7);
+            filter: brightness(1.2); 
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #007F89;
+            font-weight: bold;
+        }
+
+       
+        #portfolio-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+     
+        #portfolio-text .port {
+            color: #00A7AF;
+        }
+
+     
+        #portfolio-text .folio {
+            color: #007F87; 
+        }
+
+       
+        #hero {
+            text-align: center;
+            padding: 100px 0;
+        }
+
+      
+            font-size: 3rem;
+            margin-bottom: 20px;
+            animation: fadeInUp 4.5s;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+            animation: fadeInUp 3.5s 1.5s;
+        }
+
+       
+        section {
+            padding: 40px;
+            text-align: center; 
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            animation: fadeInUp 2.5s;
+        }
+
+     
+        #your-name {
+            background-color: rgba(0, 167, 175, 0.7); 
+        }
+
+       
+        #ABOUT h2 {
+            color: black;
+            box-shadow: 0 0 20px rgba(192, 192, 192, 0.7);
+            filter: brightness(1.2); 
+        }
+
+       
+        #portfolio {
+            background-color: rgba(74, 199, 208, 0.7); 
+        }
+
+      
+        #ACHIEVEMENTS h2 {
+            margin-bottom: 40px;
+            color: black; 
+            box-shadow: 0 0 20px rgba(192, 192, 192, 0.7); 
+            filter: brightness(1.2); 
+        }
+
+       
+        #contact-me {
+            background-color: rgba(0, 0, 0, 0.7); 
+            color: #fff; 
+            padding: 60px; 
+            border-radius: 10px; 
+            margin-top: 20px; 
+        }
+
+       
+        #contact-me h2 {
+            color: #FFD700;
+            box-shadow: 0 0 20px rgba(192, 192, 192, 0.7);
+            filter: brightness(1.2); 
+        }
+
+     
+        #contact-me form {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 20px; 
+        }
+
+        #about p,
+        #portfolio .portfolio-item,
+        #contact form {
+            animation: fadeInUp 1.5s 0.5s;
+        }
+
+       
+        #home {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 100px 0;
+        }
+
+        #home h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            animation: fadeInUp 5.5s;
+        }
+
+        #home p {
+            font-size: 1.2rem;
+            animation: fadeInUp 2.5s 0.5s;
+        }
+
+       
+        footer {
+            background-color: #00202E; 
+            color: #fff;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            text-align: center;
+        }
+
+
+        #ABOUT p, #ACHIEVEMENTS p {
+            color: black; 
+        }
+
+      
+        .achievement-box {
+            background-color: #ddd;
+            padding: 20px;
+            border-radius: 10px; 
+            margin: 20px;
+            text-align: center; 
+            position: relative;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+        }
+
+      
+        .achievement-box::before {
+            content: '';
+            width: 0;
+            height: 0;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            border-bottom: 52px solid #fff;
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+
+        .lilac {
+            background-color: #007F89;
+        }
+
+        .blue {
+            background-color: #007F89; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#ABOUT">ABOUT</a></li>
+                <li><a href="#ACHIEVEMENTS">ACHIEVEMENTS</a></li>
+                <li><a href="#CONTACT ME">CONTACT ME</a></li>
+            </ul>
+        </nav>
+        <img id="profile-image" src="C:\Users\tejha\Downloads\face.jpg">
+        <div id="portfolio-text">
+            <span class="port">Port</span><span class="folio">folio</span>
+        </div>
+    </header>
+
+    <section id="home">
+        <h2 class="animate__animated animate__fadeIn">Welcome to My Portfolio</h2>
+        <p class="animate__animated animate__fadeIn animate__delay-3.5s">I'm B TEJHAASWWINI, a Student, a Web Developer, Designer, and Creator.</p>
+        <hr>
+       <hr>
+       <hr>
+        <h3><a href="C:\Users\tejha\Downloads\resumefinal.pdf" download>Download My Resume</a></h3>
+    </section>
+
+    <section id="ABOUT">
+        <h2 class="animate__animated animate__fadeIn">B TEJHAASWWINI</h2>
+        <p class="animate__animated animate__fadeIn animate__delay-2.5s">I am a third-year Computer Science Engineering student with a deep passion for coding and technology. Beyond the world of algorithms and code, I'm also a dedicated Bharatanatyam dancer, where the rhythms of the dance floor offer me a unique canvas for self-expression. My love for technology and art is complemented by my deep connection with nature. Exploring the great outdoors, whether it's hiking through lush forests or simply enjoying a quiet moment by a serene lake, rejuvenates my spirit.
+
+I believe that technology has the power to drive positive change in society. With a strong sense of purpose, I aspire to leverage my coding skills to develop solutions that address real-world challenges and make a meaningful impact on people's lives. My journey is a fusion of technology, art, and a commitment to making our world a better place.</p>
+        <b><a href="#CONTACT ME" class="cta-button animate__animated animate__fadeIn animate__delay-2.5s">Contact Me</a></b>
+    </section>
+
+    <section id="ACHIEVEMENTS">
+        <h2 class="animate__animated animate__fadeIn">ACHIEVEMENTS</h2>
+        <div class="portfolio-item animate__animated animate__fadeIn animate__delay-1s"></div>
+
+        <div class="achievement-box red">
+            <h3>Achievement 1</h3>
+            <p>| BEST OUT-GOING STUDENT 2019 |</p>
+        </div>
+
+        <div class="achievement-box blue">
+            <h3>Achievement 2</h3>
+            <p>| WINNER OF INNOVATIVE DESIGN THINKING |</p>
+        </div>
+
+        <div class="achievement-box green">
+            <h3>Achievement 3</h3>
+            <p>| AIR 46 IN NATIONAL TALENT SEARCH EXAMINATION |</p>
+        </div>
+    </section>
+
+    <section id="CONTACT ME">
+        <div id="contact-me">
+            <h2 class="animate__animated animate__fadeIn">Contact Me</h2>
+            <form class="animate__animated animate__fadeIn animate__delay-1s">
+                <h4><label for="name">NAME:</label></h4>
+                <input type="text" id="name" name="name" required>
+
+                <h4><label for="email">EMAIL:</label></h4>
+                <input type="email" id="email" name="email" required>
+
+                <h4><label for="message">MESSAGE:</label></h4>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <h3><button type="submit">SEND</button></h3>
+            </form>
+        </div>
+    </section>
+
+    <footer class="animate__animated animate__fadeIn animate__delay-1s">
+        <p>&copy; 2023 Tejhaaswwini B | Bangalore, Karnataka, India. All Rights Reserved</p>
+        <p><a href="#">Privacy Policy</a></p>
+        <h4>"Success is liking yourself, liking what you do, and liking how you do it."</h4>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
+</body>
+</html>
