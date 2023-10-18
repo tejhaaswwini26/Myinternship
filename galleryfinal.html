@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Photo Gallery</title>
+</head>
+<body>
+    <header>
+        <h1><b>| DESKTOP WALLPAPER |</b></h1>
+        <p> choose aesthetic wallpapers for your desktop </p>
+    </header>
+    <div class="gallery">
+        <div class="image-container">
+            <img src="C:\Users\tejha\OneDrive\Pictures\newwallpaper2.jpg" >
+        </div>
+        <div class="image-container">
+            <img src="C:\Users\tejha\OneDrive\Pictures\newwallpaper3.jpg" >
+        </div>
+        <div class="image-container">
+            <img src="C:\Users\tejha\OneDrive\Pictures\pinterest-laptop-6pkn5gdey3vn194a.jpg">
+        </div>
+        <div class="image-container">
+            <img src="C:\Users\tejha\OneDrive\Pictures\newwallpaper4.jpg">
+        </div>
+        <div class="image-container">
+            <img src="C:\Users\tejha\OneDrive\Pictures\newwallpaper5.jpg">
+        </div>
+       <div class="image-container">
+            <img src="C:\Users\tejha\OneDrive\Pictures\newwallpaper6.jpg">
+        </div>
+      <div class="image-container">
+            <img src="C:\Users\tejha\OneDrive\Pictures\newwallpaper7.jpg">
+        </div>
+     <div class="image-container">
+            <img src="C:\Users\tejha\OneDrive\Pictures\newwallpaper8.jpg">
+        </div>
+    <div class="image-container">
+            <img src="C:\Users\tejha\OneDrive\Pictures\newwallpaper12.jpg">
+        </div>
+    <div class="image-container">
+            <img src="C:\Users\tejha\OneDrive\Pictures\newwallpaper10.jpg" >
+        </div>        
+       <div class="image-container">
+            <img src="C:\Users\tejha\Downloads\wallpaper11.jpg">
+      </div>
+  <div class="image-container">
+            <img src="C:\Users\tejha\Downloads\wallpaper13.jpg">
+      </div>
+    <div class="image-container">
+            <img src="C:\Users\tejha\Downloads\wallpaper14.jpg">
+      </div>
+     <div class="image-container">
+            <img src="C:\Users\tejha\Downloads\wallpaper15.jpg">
+      </div>
+    <div class="image-container">
+            <img src="C:\Users\tejha\Downloads\wallpaper16.jpg">
+      </div>
+  <div class="image-container">
+            <img src="C:\Users\tejha\Downloads\wallpaper17.jpg">
+      </div>
+   <div class="image-container">
+            <img src="C:\Users\tejha\Downloads\wallpaper18.jpg">
+      </div>
+    <div class="image-container">
+            <img src="C:\Users\tejha\Downloads\wallpaper19.jpg">
+      </div>
+<div class="image-container">
+            <img src="C:\Users\tejha\Downloads\wallpaper20.jpg">
+      </div>
+<div class="image-container">
+            <img src="C:\Users\tejha\Downloads\wallpaper21.jpg">
+      </div>
+<div class="image-container">
+            <img src="C:\Users\tejha\Downloads\wallpaper22.jpg">
+      </div>
+<div class="image-container">
+            <img src="C:\Users\tejha\Downloads\wallpaper23.jpg">
+      </div>
+<div class="image-container">
+            <img src="C:\Users\tejha\Downloads\wallpaper24.jpg">
+      </div>
+<div class="image-container">
+            <img src="C:\Users\tejha\Downloads\wallpaper25.jpg">
+      </div>
+<div class="image-container">
+            <img src="C:\Users\tejha\OneDrive\Pictures\background.jpg">
+      </div>
+     
+
+    </div>
+ <footer class="animate__animated animate__fadeIn animate__delay-1s">
+        <p>&copy; 2023 Tejhaaswwini B | Bangalore, Karnataka, India. All Rights Reserved</p>
+        <p><a href="#">Privacy Policy</a></p>
+        <h4>"Success is liking yourself, liking what you do, and liking how you do it."</h4>
+    </footer>
+    <div id="modal" class="modal">
+        <span class="close" id="close-modal">&times;</span>
+        <img id="modal-image" class="modal-content">
+    </div>
+    <script>
+        const imageContainers = document.querySelectorAll(".image-container");
+        const modal = document.getElementById("modal");
+        const modalImage = document.getElementById("modal-image");
+        const closeModal = document.getElementById("close-modal");
+
+        function openModal(imageSrc) {
+            modal.style.display = "flex";
+            modalImage.src = imageSrc;
+        }
+
+        function closeModalFunction() {
+            modal.style.display = "none";
+        }
+
+        imageContainers.forEach((container) => {
+            const image = container.querySelector("img");
+            image.addEventListener("click", () => {
+                openModal(image.src);
+            });
+        });
+
+        closeModal.addEventListener("click", closeModalFunction);
+
+        modal.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                closeModalFunction();
+            }
+        });
+
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape") {
+                closeModalFunction();
+            }
+        });
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #00202E;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .image-container {
+            cursor: pointer;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 1px solid #ddd;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            max-width: 90%;
+            max-height: 90%;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #fff;
+            font-size: 30px;
+            cursor: pointer;
+        }
+   footer {
+            background-color: #00202E;
+            color: #fff;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            text-align: center;
+        
+        }
+
+    </style>
+</body>
+</html>
