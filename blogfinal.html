@@ -1,0 +1,309 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <title>Travel Escapes</title>
+    <style>
+      
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://wallpapershome.com/images/pages/pic_h/620.jpg'); 
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        header {
+            background-image: url('https://wallpapercrafter.com/desktop/38784-Trebarwith-Strand-4k-4K-wallpaper-4K-England-travel-tourism-sunset-cliff-sea.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            text-align: center;
+            position: relative; 
+            box-shadow: 0 0 20px rgba(192, 192, 192, 0.7);
+            filter: brightness(1.2); 
+        }
+
+        header h1, header nav {
+            animation: fadeInUp 2s;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+       
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #0054A6;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease-in-out;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #003f7f;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); 
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+        }
+ .circle-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+ .circle {
+            width: 200px;
+            height: 180px;
+            border-radius: 50%;
+            background-color: #0054A6;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+ .circle h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+           font-color: white;
+        }
+
+        .circle p {
+            font-size: 18px;
+            color: black;
+        }
+.beach-paradise {
+            background-image: url('https://tse1.mm.bing.net/th?id=OIP.1_TuNfz5G7zIVSEhifLSmAHaEK&pid=Api&P=0&h=220');
+        }
+
+        .mountain-escape {
+            background-image: url('https://tse1.mm.bing.net/th?id=OIP.bc-6uoZEEr2kyPWDFf0MZgHaEK&pid=Api&P=0&h=220');
+        }
+
+        .city-adventures {
+            background-image: url('https://tse3.mm.bing.net/th?id=OIP.vwN1COJljju3ER1NLad9pQHaEK&pid=Api&P=0&h=220');
+        }
+
+        .cultural-explorations {
+            background-image: url('https://tse3.mm.bing.net/th?id=OIP.pCDjhQl3BPO2FG7NVJrAegHaFj&pid=Api&P=0&h=220');
+        }
+ .blog-section {
+            margin: 20px 0;
+        }
+ .blog-post {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+}
+.blog-post h3 {
+            color: #0054A6;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+ .blog-post p {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            background-color : black; 
+            color: white;
+            padding: 10px;
+        }
+
+       
+        .post, .article, .about, .contact, .achievement-box {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); 
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+        }
+
+        h2 {
+            color: #0054A6; 
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #333; 
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        /* Responsive CSS */
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+        
+        /* Custom animation keyframes */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="animate__animated animate__fadeInUp">Travel Escapes</h1>
+        <nav class="animate__animated animate__fadeInUp">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#article">Destinations</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+            <li><a href="#blog">Blog</a></li>
+             
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="post" id="home">
+            <h2>Welcome to Travel Escapes</h2>
+            <p>Embark on unforgettable journeys, explore breathtaking destinations, and discover the world with us.</p>
+        </section>
+        
+        <section class="article" id="article">
+            <h2>Top Destinations</h2>
+            <p>Explore our featured travel destinations, from exotic beaches to majestic mountains.</p>
+ <div class="circle-container">
+   <div class="circle beach-paradise">
+                <h3>Beach Paradise</h3>
+                <p>Relax on pristine sandy shores with crystal clear waters.</p>
+            </div>
+
+            <div class="circle mountain-escape">
+                <h3>Mountain Escape</h3>
+                <p>Discover the beauty of towering peaks and serene landscapes.</p>
+            </div>
+<div class="circle city-adventures">
+                <h3>City Adventures</h3>
+                <p>Experience the hustle and bustle of vibrant urban life.</p>
+            </div>
+
+            <div class="circle cultural-explorations">
+                <h3>Cultural Explorations</h3>
+                <p>Immerse yourself in rich traditions and historical wonders.</p>
+            </div>
+        </section>
+        
+        <section class="about" id="about">
+            <h2>About Travel Escapes</h2>
+            <p>We are a passionate team of travelers sharing our adventures and travel tips with the world.</p>
+
+            <!-- Achievement boxes -->
+            <div class="achievement-box">
+                <img src="C:\Users\tejha\OneDrive\Pictures\medal.jpg">
+<h2>Explorer Extraordinaire</h2>
+                <p> We have covered over 50 countries, and our travel guides have been read by millions, helping fellow adventurers explore the world's hidden gems.</p>
+            </div>
+
+            <div class="achievement-box">
+                <img src="C:\Users\tejha\OneDrive\Pictures\medal.jpg">
+<h2>Cultural Connoisseur</h2>
+                <p> Our in-depth cultural explorations have been recognized with awards for promoting cross-cultural understanding and respect.</p>
+            </div>
+
+            <div class="achievement-box">
+                <img src="C:\Users\tejha\OneDrive\Pictures\medal.jpg">
+<h2>Eco-Warrior</h2>
+                <p>We're committed to responsible travel. Our efforts have led to the planting of thousands of trees and the reduction of plastic waste in pristine destinations.</p>
+            </div>
+        </section>
+<section class="blog-section">
+            <h2>Travel Blog</h2>
+            
+           
+            <div class="blog-post">
+                <h3>Exploring the Serene Beaches of Bali</h3>
+                <p>Join us on a tropical getaway to Bali, where we'll guide you through the tranquil beaches of this Indonesian paradise. Dive into the crystal-clear waters, relax on pristine shores, and immerse yourself in the vibrant local culture. Our journey will take you on a sensory adventure, from the aromatic street food to the mesmerizing Balinese dance performances. Get ready to experience the ultimate beach escape in Bali.</p>
+            </div>
+
+           
+            <div class="blog-post">
+                <h3>A Himalayan Expedition: Trekking to Everest Base Camp</h3>
+                <p> Embark on an awe-inspiring expedition to the Himalayas as we trek to the iconic Everest Base Camp. Along this journey, you'll witness some of the world's most breathtaking mountain scenery, including close-up views of the towering Everest. Learn about the local Sherpa culture, visit ancient monasteries, and conquer challenging mountain passes. Whether you're an experienced trekker or an aspiring adventurer, this journey to the Everest Base Camp is an unforgettable experience that will leave you with memories of a lifetime.</p>
+            </div>
+</section>
+
+        
+        <section class="contact" id="contactus">
+            <h2>Contact Us</h2>
+            <h4><label for="name">Name:</label></h4>
+            <form>
+                <input type="text" id="name" name="name" required>
+
+                <h4><label for="email">Email:</label></h4>
+                <input type="email" id="email" name="email" required>
+
+                <h4><label for="message">Message:</label></h4>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                
+
+<h3><button type="submit">SEND</button></h3>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Travel Escapes</p>
+         <p>&copy; 2023 Tejhaaswwini B | Bangalore, Karnataka, India. All Rights Reserved</p>
+        <p><a href="#">Privacy Policy</a></p>
+        <h4>"Success is liking yourself, liking what you do, and liking how you do it."</h4>
+    
+    </footer>
+</body>
+</html>
