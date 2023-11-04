@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <title>The Little Cupcake Co.</title>
+    <style>
+        body, h1, h2, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Helvetica';
+            background-image: url('https://wallpaperaccess.com/full/1092245.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        header {
+            background-image: url('https://wallpapercave.com/wp/wp9181289.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color:  #AB0856;
+            text-align: center;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 0 20px rgba(192, 192, 192, 0.7);
+            filter: brightness(1.2);
+        }
+
+        header h1, header nav {
+            animation: fadeInUp 3.5s;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #AB0856;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease-in-out;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #003f7f;
+        }
+
+        .logo {
+            width: 10px;
+            height: 10px;
+            margin-right: 10px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .box {
+            width: 200px;
+            height: 180px;
+            background-color: #0054A6;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .box h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            color: #D6FEFC;
+ padding: 10px 20px;
+            border-radius: 10px;
+padding: 10px 20px;
+            border-radius: 10px;
+            transition: background-color 0.3s ease-in-out;
+            font-weight: bold;
+ 
+        }
+
+        .box p {
+            font-size: 18px;
+            color: black;
+        }
+
+        .Chocolate {
+            background-image: url('https://i.ytimg.com/vi/VW2CmHsN0bo/maxresdefault.jpg');
+            background-size: cover;
+        }
+
+        .Black-Forest {
+            background-image: url('https://tse2.mm.bing.net/th?id=OIP.84cjxhG8JjbXeiim899mwAHaLG&pid=Api&P=0&h=220');
+            background-size: cover;
+        }
+
+        .Red-Velvet {
+            background-image: url('https://sweetcelebration.nl/wp-content/uploads/2018/09/IMG_6409.jpg');
+            background-size: cover;
+        }
+
+        .Butterscotch {
+            background-image: url('https://www.karthikasravanthi.com/wp-content/uploads/2021/03/Butterscotch-Cake-3.jpg');
+            background-size: cover;
+        }
+
+        .blog-section {
+            margin: 20px 0;
+        }
+
+        .blog-post {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .blog-post h3 {
+            color: #AB0856;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .blog-post p {
+            color: #333;
+            font-size: 20px;
+            font-family: 'Pristina';
+              font-weight: italic;
+            
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-image: url('https://wallpapercave.com/wp/wp9181289.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color:  #AB0856;
+            text-align: center;
+            position: relative;
+            text-align: center;
+            color: white;
+            padding: 10px;
+        }
+
+        .post, .article, .about, .contact, .achievement-box {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #AB0856;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+
+        /* Responsive CSS */
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 24px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+
+        /* Custom animation keyframes */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="C:\Users\tejha\Downloads\caake.jpg" alt="Cake Image">
+        <h1 class="animate__animated animate__fadeInUp">The Little Cupcake Co.</h1>
+        <nav class="animate__animated animate__fadeInUp">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#article">Browse by Flavours</a></li>
+                <li><a href="#about">Services</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+                <li><a href="#blog">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="post" id="home">
+            <h2>Welcome to The Little Cupcake Co.</h2>
+           <h2>"Where Every Slice is a Sweet Memory!"</h2>
+            <h5><p>Step into the world of Sweet Tooth, where every bite is a celebration! </p></h5>
+            <p>At Sweet Tooth, we don't just make cakes; we craft edible dreams. Our cakes are the heart and soul of every special occasion, turning moments into memories that taste as sweet as success. From enchanting wedding cakes to birthday delights that bring out your inner child, we're in the business of making life a little sweeter. So, why wait? Join us in the sweet journey of life and savor the moments with our irresistible creations.</p>
+        </section>
+
+        <section class="article" id="article">
+            <h2><b>Browse by Flavours</b></h2>
+            <p><b>Explore our signature flavors, from classic chocolate to exquisite red velvet.</b></p>
+            <div class="box-container">
+                <div class="box Chocolate">
+                    <h3>Chocolate</h3>
+                </div>
+                <div class="box Black-Forest">
+                    <h3>Black Forest</h3>
+                </div>
+                <div class="box Red-Velvet">
+                    <h3>Red Velvet</h3>
+                </div>
+                <div class="box Butterscotch">
+                    <li><a><h3>Butterscotch</h3></a></li>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>Services</h2>
+            <p><b>Indulge in a world of sweet possibilities with our range of exquisite cake services.</b></p>
+
+            <!-- Achievement boxes -->
+            <div class="achievement-box">
+                <img src="C:\Users\tejha\Downloads\poo.jpg">
+                <h2>Custom Cake Creations</h2>
+                <p> Our talented bakers can bring your cake vision to life, crafting custom cakes for any occasion.</p>
+ <span><b>Price: Rs.2000/-</b></span>
+<p></p>
+           <p> <button class="add-to-cart" style="background-color: #AB0856; color: #fff; font-size: 20px; font-weight: bold; padding: 10px 20px; border: none; border-radius: 10px;">Add to Cart</button>
+</p>
+            </div>
+
+            <div class="achievement-box">
+                <img src="C:\Users\tejha\Downloads\pinkcake.jpg">
+                <h2>Wedding Cake Masterpieces</h2>
+                <p>Elevate your special day with our exquisite wedding cake designs, tailored to your theme and taste.</p>
+ <span><b>Price: Rs.8500/-</b></span>
+<p></p>
+            <p><button class="add-to-cart" style="background-color: #AB0856; color: #fff; font-size: 20px; font-weight: bold; padding: 10px 20px; border: none; border-radius: 10px;">Add to Cart</button>
+</p>
+            </div>
+
+            <div class="achievement-box">
+                <img src="C:\Users\tejha\Downloads\th (1).jpg">
+                <h2>Cupcake Selection</h2>
+                <p>Indulge in our delectable range of cupcakes, available in various flavors and perfect for any event.</p>
+ <span><b>Price: Rs.500/- per box</b></span>
+<p></p>
+            <p><button class="add-to-cart" style="background-color: #AB0856; color: #fff; font-size: 20px; font-weight: bold; padding: 10px 20px; border: none; border-radius: 10px;">Add to Cart</button>
+</p>
+            </div>
+        </section>
+
+
+        <section class="blog-section" id="blog">
+            <h2>Customer Reviews</h2>
+<p> <b>Hear from our happy customers!!!</b></p>
+
+            <div class="blog-post">
+                <h3>Review 1</h3>
+                <p>"I ordered a cake from this website for my daughter's birthday, and it was a delightful experience from start to finish. The website's user-friendly interface made the selection process a breeze. The cake arrived on time and in perfect condition. It was not only beautifully decorated but also tasted heavenly. My daughter and her friends couldn't stop praising it. The customer service was exceptional, and I appreciated the personal touch in their service. I will definitely be a returning customer for all our special occasions. This website offers both great cakes and a fantastic overall experience."</p>
+            </div>
+
+            <div class="blog-post">
+                <h3>Review 2</h3>
+                <p>"I recently ordered a custom cake for my best friend's bridal shower, and it was a huge success. The website's design options allowed me to create a cake that perfectly matched the theme of the event. The cake was not only visually stunning but also one of the best-tasting cakes I've ever had. All the guests at the shower were impressed, and many asked for the website's details. The delivery was prompt and hassle-free. This website made the entire process, from ordering to enjoying the cake, seamless and enjoyable. I highly recommend it for anyone looking for exceptional cakes for their special occasions."</p>
+            </div>
+        </section>
+
+        <section class="contact" id="contactus">
+            <h2>Contact Us</h2>
+            <form>
+                <h4><label for="name" style="background-color: #AB0856; color: #fff; font-size: 20px; font-weight: bold; padding: 10px 20px; border: none; border-radius: 10px;">Name:</label></h4>
+                <input type="text" id="name" name="name" required>
+
+                <h4><label for="email" style="background-color: #AB0856; color: #fff; font-size: 20px; font-weight: bold; padding: 10px 20px; border: none; border-radius: 10px;">Email:</label></h4>
+                <input type="email" id="email" name="email" required>
+
+                <h4><label for="message" style="background-color: #AB0856; color: #fff; font-size: 20px; font-weight: bold; padding: 10px 20px; border: none; border-radius: 10px;">Message:</label></h4>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+<h3><button type="submit" style="background-color: #AB0856; color: #fff; font-size: 20px; font-weight: bold; padding: 10px 20px; border: none; border-radius: 10px;">SEND</button></h3>
+
+              
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 The Little Cupcake Co.</p>
+        <p>&copy; 2023 Tejhaaswwini B | Bangalore, Karnataka, India. All Rights Reserved</p>
+        <p><a href="#">Privacy Policy</a></p>
+        <h4>"Where Every Slice is a Sweet Memory!"</h4>
+    </footer>
+</body>
+</html>
